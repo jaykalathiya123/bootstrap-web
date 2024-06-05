@@ -7,7 +7,9 @@ a{
     text-decoration: none;
     color: black    ;
 }
-
+/* git remote add origin https://github.com/jaykalathiya123/bootstrap-web.git
+git branch -M main
+git push -u origin main */
 .bake i {
     background-color: var(--bg);
     z-index: 99999;
@@ -92,6 +94,18 @@ body{
 }
 .sec-color{
     background-color:#DCF2EA;
+}
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+    width: 600px;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    width: 500px !important;
 }
 .mb{
     margin-bottom: 200px;
@@ -335,6 +349,13 @@ svg {
     background-color:#DCF2EA;
     padding: 100px 0;
 }
+.card-in{
+    transition: all 0.5s ease-in-out;
+}
+.card-in:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform:translateY(-20px) ;
+}
 .worke-in{
     border: 1px solid rgb(226, 221, 221);
     background-color: white;
@@ -359,16 +380,6 @@ svg {
     background-repeat: no-repeat;
       animation:border-move 30s linear infinite;
 }
-
-/* .container {
-  height: 340px;
-  width: 370px;
-  position:absolute;
-  left:50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-} */
-
 @keyframes bg-move{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}
 
 @keyframes border-move{
